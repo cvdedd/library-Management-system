@@ -1,69 +1,103 @@
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library Management System</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link href="../css/all.min.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
+  <body>
+      
+    <header>
+      <p>Cvdedd LMS</p>
+    </header>
+
     <!-- Introduction.. like hello and the name of the person-->
     <div class="container">
-        <div class="intro">
-            <p>Hello <span id="username"> </span></p>
-            <h3>You've got</h3>
-            <p class="task">4 tasks today</p>
+      <div class="intro">
+        <p>Hello <span id="username">Cvdedd</span></p>
+        <h3>You've got</h3>
+        <p class="task">4 tasks today</p>
+
+        <div class="profile">
+          <div class="pic"></div>
+          <div class="profile-contents">
+            <p>Akowuah Bright</p>
+            <a href="sign-in.html">Sign Out</a>
+          </div>
         </div>
+      </div>
 
-        <!-- The courses section for the home page -->
+      <!-- The courses section for the home page -->
 
-        <div class="courses">
-            <h3>Courses</h3>
-            <p>Courses currently undertaken by you</p>
-            <div class="courses-wrapper">
-                <div class="courses-el">
-
-                </div>
-                <div class="courses-el">
-
-                </div>
-                <div class="courses-el">
-
-                </div>
-                <div class="courses-el">
-
-                </div>
+      <div class="books">
+        <h3>Books</h3>
+        <p>Books recommended for you</p>
+        <div class="books-wrapper">
+          <div class="books-el">
+            <div class="book-info">
+              <h5>Merlin</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
             </div>
-        </div>
-
-        <!-- SCHEDULE-->
-        <div class="schedule">
-            <h3>Your Schedule</h3>
-            <p>Upcoming activities for you</p>
-
-            <div class="schedule-main">
-
+          </div>
+          <div class="books-el">
+            <div class="book-info">
+              <h5>Aladin</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
             </div>
+          </div>
+          <div class="books-el">
+            <div class="book-info">
+              <h5>Coming</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
+            </div>
+          </div>
+          <div class="books-el">
+            <div class="book-info">
+              <h5>Tarzan</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <footer>
-           <ul>
-               <li><a href="index.html"><i class="fas fa-2x fa-home"></i>Home</a></li>
-               <li><a href="index.html"><i class="fab fa-2x fa-atlassian"></i>Class</a></li>
-               <li><a href="index.html"><i class="fas fa-2x fa-tasks"></i>Tasks</a></li>
-               <li><a href="index.html"><i class="fas fa-2x fa-search"></i>Search</a></li>
-           </ul>
-           
-        </footer>
+      <!-- SCHEDULE-->
+      <div class="schedule">
+        <h3>Your Schedule</h3>
+        <p>Upcoming activities for you</p>
 
+        <div class="schedule-main"></div>
+      </div>
+
+      <footer>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-2x fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="feed.html"><i class="fab fa-2x fa-atlassian"></i>Feed</a>
+          </li>
+          <li>
+            <a href="status.html"><i class="fas fa-2x fa-tasks"></i>Status</a>
+          </li>
+          <li id="myBtn"><i class="fas fa-2x fa-search"></i>Search</li>
+        </ul>
+      </footer>
+
+      <!-- The Modal for the search thingy-->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="search"><i class="fas fa fa-search"></i></span>
+          <input type="text" placeholder="Enter the book here" />
+        </div>
+      </div>
     </div>
-
 
     <!-- Js external file starts here-->
     <script src="../js/text.js"></script>
-</body>
-
+  </body>
 </html>

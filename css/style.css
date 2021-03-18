@@ -10,19 +10,61 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+  width: 100%;
+  height: 5vh;
+  background: rgb(36, 36, 36);
+  border-radius: 5px;
+}
+header p {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 1vh;
+}
+
 .container {
   margin: 5% 0 0 0;
 }
+
 .intro,
-.courses,
+.books,
 .schedule {
   padding: 1.5rem;
   margin: 0 2%;
   letter-spacing: -2px;
 }
+
+.profile {
+  float: right;
+  margin-top: -6rem;
+  text-align: right;
+}
+#username {
+  font-weight: bold;
+}
+.profile .pic {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  background-color: blue;
+  float: inherit;
+}
+.profile-contents p {
+  font-size: 14px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+.profile-contents a {
+  text-decoration: none;
+  color: #49b583;
+}
+
 p {
   color: #333;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
 }
 
 h3 {
@@ -34,83 +76,170 @@ p.task {
   font-weight: bold;
   font-size: 2em;
 }
-.courses {
+.books {
   padding-top: 0;
 }
-.courses p {
-  margin-bottom: 10%;
+.books p {
+  margin-bottom: 5%;
 }
-.courses-wrapper {
+.books-wrapper {
   min-height: 160px;
   display: flex;
   overflow-x: auto;
 }
-.courses-wrapper::-webkit-scrollbar {
+.books-wrapper::-webkit-scrollbar {
   /*display: none;*/
 }
-.courses-el {
+.books-el {
   min-width: 65%;
-  height: 150px;
-  line-height: 110px;
+  height: 30vh;
   background-color: #333;
   border-radius: 20px;
   margin-right: 15px;
+  position: relative;
 }
-.courses-el:nth-of-type(1) {
+.books-el:nth-of-type(1) {
+  background: url(../images/IMG_0647.JPG);
   background-color: #ff4171;
+  background-blend-mode: multiply;
 }
-.courses-el:nth-of-type(2) {
+.books-el:nth-of-type(2) {
+  background: url(../images/IMG_0648.JPG);
   background-color: #49b583;
+  background-blend-mode: multiply;
 }
-.courses-el:nth-of-type(3) {
+.books-el:nth-of-type(3) {
+  background: url(../images/IMG_0652.JPG);
   background-color: #ffbd69;
+  background-blend-mode: multiply;
 }
-.courses-el:nth-of-type(4) {
+.books-el:nth-of-type(4) {
+  background: url(../images/seamless-pattern-photoshop-tutorial.jpg);
   background-color: #7f86ff;
+  background-blend-mode: multiply;
+}
+.book-info {
+  width: 75%;
+  height: 15vh;
+  margin: 13vh 0 0 15px;
+}
+.book-info p {
+  color: #fff;
+}
+h5 {
+  font-size: 35px;
+  letter-spacing: 0.05rem;
+  color: #fff;
 }
 
 /* schedule section */
+.schedule {
+  margin-top: -20px;
+}
 .schedule-main {
-  margin-top: 1rem;
+  margin-top: 5%;
   width: 100%;
-  height: 35%;
+  height: 35vh;
   background-color: #7f86ff;
   border-radius: 10px;
 }
 
 /* footer */
-footer{
-    width: 90%;
-    height: 100px;
-    background: #333;
-    border-radius: 20px;
-    position: fixed;
-    bottom: 10px;
-    left:5%;
-  
+footer {
+  width: 90%;
+  height: 100px;
+  background:rgb(36, 36, 36);;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 10px;
+  left: 5%;
 }
-footer ul{
-    display: flex;
+footer ul {
+  display: flex;
 }
 footer ul li {
-    list-style-type: none;
-    margin-right:30px;
-    margin-top: 15px;
+  list-style-type: none;
+  margin-right: 30px;
+  margin-top: 15px;
+  color: #fff;
+}
+li a {
+  color: #fff;
+  text-decoration: none;
+}
 
+li:hover,
+a:hover,
+.fas:hover,
+.fab:hover {
+  color: #49b583;
 }
-li a{
-    color: #fff;
-    text-decoration: none;
-    
+li:first-of-type {
+  margin-left: 15px;
+}
+footer ul li .fas,
+.fab {
+  color: #fff;
+  padding: 10px;
 }
 
-li a:hover, .fas:hover, .fab:hover{
-    color:#49b583;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(1, 88, 47); Fallback color */
+  background-color: rgba(0, 0, 22, 0.9); /* Black w/ opacity */
 }
-li:first-of-type{
-    margin-left: 15px;
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 15px;
 }
-footer ul li .fas,.fab{
-    color:#fff;
-    padding: 10px;
+
+.modal-content input {
+  width: 80%;
+  border: none;
+  height: 30px;
+}
+.modal-content input:enabled {
+  outline: none;
+  font-size: 18px;
+}
+.modal-content input::placeholder {
+  font-size: 18px;
+}
+
+/* The search Button */
+.search {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.backbtn {
+  position: absolute;
+  top: 0;
+  /*right: 25px;*/
+  font-size: 36px !important;
+  margin-left: 30px;
+}
+.backbtn a{
+  text-decoration:none;
+}
+
+.featured-text{
+   text-align: center;
 }
