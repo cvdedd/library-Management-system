@@ -26,3 +26,11 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+// when the search icon is clicked it should display info in results
+var searchIcon = document.getElementById("myform");
+var results =document.getElementById("results");
+
+searchIcon.onclick = function (){
+    results.style.display = "block";
+}

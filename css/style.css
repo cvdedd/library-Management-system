@@ -197,6 +197,14 @@ footer ul li .fas,
   background-color: rgba(0, 0, 22, 0.9); /* Black w/ opacity */
 }
 
+.modal #results{
+   height: 50%;
+   width: 50%;
+   background-color:red;
+   margin: -50px auto;
+   display: none;
+   color: white;
+}
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;

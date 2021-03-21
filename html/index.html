@@ -73,6 +73,38 @@
       </div>
 
       <footer>
+      <!--  SOME SVG ICONS 
+      HOME
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <rect x="10" y="12" width="4" height="4" /> 
+
+  search
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+feed
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
+</svg>
+
+status
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hierarchy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="5" r="2" />
+  <circle cx="5" cy="19" r="2" />
+  <circle cx="19" cy="19" r="2" />
+  <path d="M6.5 17.5l5.5 -4.5l5.5 4.5" />
+  <line x1="12" y1="7" x2="12" y2="13" />
+</svg>
+
+   -->
+</svg>
         <ul>
           <li>
             <a href="index.html"><i class="fas fa-2x fa-home"></i>Home</a>
@@ -91,13 +123,21 @@
       <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="search"><i class="fas fa fa-search"></i></span>
-          <input type="text" placeholder="Enter the book here" />
+          <span class="search" id="myform"><i class="fas fa fa-search"></i></span>
+          <input type="text" placeholder="Enter the book here" id="books"/>
         </div>
+          
+          <div id="results">
+          
+          </div>
+
       </div>
     </div>
 
     <!-- Js external file starts here-->
+     <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/search.js"></script>
     <script src="../js/text.js"></script>
+   
   </body>
 </html>
