@@ -197,17 +197,17 @@ footer ul li .fas,
   background-color: rgba(0, 0, 22, 0.9); /* Black w/ opacity */
 }
 
-.modal #results{
-   height: 50%;
-   width: 50%;
-   background-color:red;
-   margin: -50px auto;
-   display: none;
+#results{
+   height:auto;
+   width: 47.3%;
    color: white;
+   text-align: center;
+   margin: -40px auto 0 auto;
 }
+
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color:#fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -250,4 +250,14 @@ footer ul li .fas,
 
 .featured-text{
    text-align: center;
+}
+
+hr{
+  width: 8%;
+  height: 5px;
+  border-style: none;
+  border-width: 10px;
+  border-top-style: dotted;
+  border-color: rgb(255, 251, 0);
+  margin: 0 auto;
 }

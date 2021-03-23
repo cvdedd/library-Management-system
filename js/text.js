@@ -31,6 +31,8 @@ window.onclick = function (event) {
 var searchIcon = document.getElementById("myform");
 var results =document.getElementById("results");
 
+
 searchIcon.onclick = function (){
     results.style.display = "block";
+    
 }
